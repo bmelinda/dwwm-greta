@@ -137,7 +137,7 @@ body {
     margin: .8rem;
 }
 #projet, #testimony {
-    display: inline;
+    display: inline-block;
     background-color: rgb(129, 182, 184, 0.7);
     /* height: 2rem; */
     line-height: 2rem;
@@ -301,3 +301,11 @@ input:not(input[type="radio"]){
     color: rgb(73, 127, 129);
 } */
 
+@media screen and (max-width: 640px) {
+    body {
+        background-color: #f87;
+    }
+    #team1 img {
+        display: none;
+    }
+}
