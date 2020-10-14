@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Sansita+Swashed:wght@300&display=swap');
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: fixed left bottom url('../pics/bg-city.png') repeat-x,
+     fixed right top url('../pics/bg-top.png') no-repeat;
+     background-size: 500px;
+     
+}
+
+h1, h2, h3, h4 {
+    font-family: "Oswald" , sans-serif;
+}
+
+#top {
+    text-shadow: 2px 3px 5px lightslategray, -2px -3px 5px lightseagreen;
+}
+
+h1 {
+    font-variant: small-caps;
+    letter-spacing: .25em;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+blockquote span::before {
+    content: '\201C';
+}
+
+blockquote span::after {
+    content: '\201D';
+}
+
+h1+p::first-letter, h2+p::first-letter {
+    font-weight: bold;
+    font-size: 1.5em;
+} 
+h1+p::first-line, h2+p::first-line {
+    font-style: italic;
+}
+
+figure {
+    text-align: center;
+}
+
+h2 {
+    text-shadow:4px 4px 10px lightseagreen, -4px -4px 10px lightseagreen;
+}
+
+pre {
+    /*border: 10px rosybrown outset;
+    border-width: 10px 6px;*/
+    font-size: 1.2em;
+    border: lightseagreen solid .2em;
+    border-radius: 3em;
+    background-color: lemonchiffon;
+    background-image: url('../pics/bg.png');
+    /*background-image: linear-gradient( green, blue);
+    background-image: radial-gradient(blue, gray);*/
+    padding: 1em;
+    width: 40%;
+    
+    
+}
+img:hover {visibility: hidden;}
+
+p:hover {background-color: #44f5ff;}
+
+ul+li {
+    font-size: 50%;
+    list-style-image: url('../pics/puce.png');
+}
+
+table, td, th {
+    border: 0.05em #000 solid;
+    width: 75%;
+}
+
+thead {
+    background-color: #334478;
+    color: #cfc;
+}
+
+tbody>tr:nth-of-type(2n+1) {
+    background-color: #ccc;
+}
+tfoot {
+    background-color: #334466;
+    color: #88eeaa;
+    font-weight: bold;
+}
+caption {
+    color: #f00;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+tbody td:last-child {
+    text-align: right;
+}
+tbody>tr {
+    transition: all 1s ease-in;
+}
+tbody>tr:hover {
+    background-color: #88eeaa;
+    cursor: pointer;
+}
+
+
+

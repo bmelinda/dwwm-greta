@@ -1,0 +1,31 @@
+
+form {
+    width: 60%;
+    margin: 2rem auto;
+    text-align: left;
+}
+form div {
+    margin: .5rem 0;
+}
+form div>label {
+    display: inline-block;
+    font-weight: bold;
+    text-align: right;
+    width: 30%;
+}
+form div>input+label {
+    text-align: left;
+}
+form div>label+input, select, textarea {
+    width: 60%;
+}
+fieldset>fieldset {
+    margin: .5rem;
+    padding: .5rem;
+}
+#salary {
+    width: 50%;
+}
+input:focus, select:focus, textarea:focus {
+    background-color: rgb(129, 182, 184, 0.6);
+}

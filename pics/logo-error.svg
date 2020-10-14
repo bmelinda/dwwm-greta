@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400">
+    <g>
+        <circle cx="0.3cm" cy="0.1cm" r="10" style="fill:red" transform="translate(0,50)"/>
+        <circle cx="0.3cm" cy="0.1cm" r="10" style="fill:green" transform="translate(70,150)"/>
+        <circle cx="0.3cm" cy="0.1cm" r="10" style="fill:blue" transform="translate(-70,150)"/>
+    </g>
+</svg>
