@@ -1,0 +1,18 @@
+/* 
+.portrait {
+    width: 14rem;
+    height: 19rem;
+} */
+html body {
+    background-color: rgba(124, 156, 156, 0.315);
+    background-size: cover;
+}
+.card-text {
+    text-align: justify;
+}
+.card>img {
+    width: 100%;
+}
+.navbar img {
+    height: 3rem;
+}
