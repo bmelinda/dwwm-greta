@@ -77,7 +77,8 @@ blockquote p::after {
 }
 #cv>div {
     color: rgba(20, 45, 71, 0.884);
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     line-height: 1.1rem;
     font-size: 1.1rem;
     padding: 1.5rem;
