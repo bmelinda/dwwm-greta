@@ -1,18 +1,26 @@
- * {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
      margin: 0em;
      padding: 0em;
-     text-align: center;
+     /* text-align: center; */
  }
  html,body {
-    height: 100%;
-    width: 100%;
+    display: block; 
+    /* height: 100%;
+    width: 100%; */
     background-color: rgba(140, 155, 175, 0.753);
+    background-image: url('../pics/background.jpg');
+    background-attachment: fixed;
     background-size: cover;
+    font-family: 'Montserrat', sans-serif;
  }
 blockquote {
-    padding: 3rem;
-    background-color: rgb(72, 99, 128);
-    border-radius: 20%;
+    padding: 2rem;
+    background-color: rgba(72, 99, 128, 0.6);
+    border-radius: 8%;
+    width: 20rem;
+    height: 5rem;
 }
 blockquote p {
     padding: 1rem;
@@ -26,18 +34,18 @@ blockquote p::after {
     content: '\201D';
 }
 #banner {
+    display: block;
     padding: 3rem;
     background-color: rgb(89, 117, 109);
     color: #fff;
     height: 180px;
 }
 #mbtitle {
-    float: left;
+    display: flex;
+    justify-content: space-between;
     line-height: 2rem;
 }
 #mbpic {
-    display: flex;
-    justify-content: space-between;
     border-radius: 50%;
     opacity: 0.8;
     height: 10rem;
@@ -45,27 +53,65 @@ blockquote p::after {
 }
 #formart {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: rgb(175, 191, 212);
+    justify-content: left;
+    /* width: 100%; */
+    background-color: rgba(175, 191, 212, 0.6);
+    background-size: cover;
+    border: solid rgb(50, 79, 95) 0.1em;
 }
 #formart>div {
-    display: inline-block;
-    line-height: 2rem;
-    padding: 1rem;
-    width: 80%;
-    border: solid rgb(50, 79, 95) 0.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 50%;
+}
+#cv {
+    display: flex;
+    flex-direction: row;
+    width:10%;
+}
+#works {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+}
+#cv>div {
+    color: rgba(20, 45, 71, 0.884);
+    display: block;
+    line-height: 1.1rem;
+    font-size: 1.1rem;
+    padding: 1.5rem;
+    text-align: justify
+}
+#bib {
+    color: rgba(20, 45, 71, 0.884);
+    width: 90%;
+    padding: 1.5rem;
+    text-align: justify;
 }
 #art {
     display: flex;
-    justify-content: space-between;
-    width: 20%;
-    background-color: rgb(175, 191, 212);
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3rem;
 }
-#art>img  {
-    display: table-cell;
-    justify-content: space-between;
+#works>h2 {
+    color: rgba(20, 45, 71, 0.884);
+    text-align: center;
 }
+.art1 {
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: space-between; */
+    width: 30%;
+    height: auto;
+    padding: 1rem;
+}
+/* #art>img  {
+    display: table-column;
+    justify-content: space-between;
+} */
 #footer {
     background-color: rgb(89, 117, 109);
     color: #fff;
@@ -89,5 +135,8 @@ blockquote p::after {
 @media screen and (max-width: 640px) {
     #banner img {
         display: none;
+    }
+    section div {
+        display: block;
     }
 }
